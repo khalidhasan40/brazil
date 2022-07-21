@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 /*-----header---*/
 .banner{
     width: 1321px;
@@ -21,6 +22,25 @@
     font-weight: 700;
     Line height:80px
 }
+.watch-link{
+        margin-top: 30px;
+        padding: 16px 25px;
+        border-radius: 30px;
+        background-color: #e44545;
+        color: #faeeee;
+        font-weight: 400;
+        font-size: 20px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    .watch-link:hover{
+        background-color: #d62727;
+        font-size: 25px;
+    }
+    .watch-link i{
+        margin-left: 2px;
+    }
+
 
 .player-info{
     Line-height:26px;
@@ -102,3 +122,103 @@ text-decoration: none;
     grid-template-columns: repeat(3, 1fr);
 
 }
+/*---------foooter---*/
+footer{
+    background: #161616;
+    margin-top: 100px;
+}
+.footer-area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-area h2{
+    margin-top: 50px;
+    font-weight: 600;
+    font-size: 40px;
+    color: #faeeee;
+}
+hr{
+    height: 0;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    width: 90%;
+    margin: 30px 0;
+}
+.footer-area ul{
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    width: 90%;
+}
+.footer-area ul li{
+    list-style: none;
+}
+.footer-area ul li a{
+    font-size: 16px;
+    color: #B9B9B9;
+    text-decoration: none;
+}
+.footer-icon ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 30px;
+}
+.footer-icon ul li{
+    list-style: none;
+    font-size: 28px;
+    color: #faeeee;
+    cursor: pointer;
+         /* Media Query For Mobil*/
+
+@media screen and (max-width: 668px) {
+    .container{
+        width: 100%;
+        margin: 0;
+    }
+    .top-section{
+        padding-top: 50px;
+        flex-direction: column;
+        text-align: center;
+        border-radius: 0 0 30px 30px;
+    }
+    .top-section h1{
+        font-size: 24px;
+        line-height: 33px;
+    }
+    .top-section p{
+        height: 40px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 14px;
+    }
+    .top-section-img img{
+        width: 233px;
+        height: 245px;
+    }
+    @media screen and (min-width: 668px) and (max-width: 992px) {
+    
+        .top-section{
+            padding: 15px 30px;
+    
+        }
+    
+        .top-section h1{
+            font-size: 40px;
+            line-height: 50px;
+            margin-top: 30px;
+        }
+        .top-section p{
+            font-size: 16px;
+            height: 100px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .top-section-img img{
+            width: 375px;
+            height: 412px;
+        }
+        
